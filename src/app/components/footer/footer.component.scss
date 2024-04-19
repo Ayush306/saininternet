@@ -1,0 +1,14 @@
+.footer-section{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+.copy-right{
+    color: white;
+    font-weight: 500;
+}
+.footer-section .footer-logo img{
+    width: 80px;
+}

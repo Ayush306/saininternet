@@ -1,0 +1,45 @@
+@import url(./../../../styles.scss);
+.navbar-container img{
+    width: 85px;
+    // width: 100%;
+}
+.item-container{
+    justify-content: flex-end;
+}
+.item-container ul{
+    align-items: center;
+    gap: 15px;
+}
+.item-container li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--secondary-color);
+
+  
+}
+.item-container .connection-btn{
+    background-image: linear-gradient(to top, var(--secondary-color) 50%, var(--primary-color) 50%);
+    background-size: 100% 200%;
+    transition: background-position 0.3s ease-in-out;
+}
+.item-container .connection-btn:hover{
+    background-position: 0 -100%;
+}
+.item-container li a:hover{
+    color: var(--primary-color);
+   
+}
+.navbar-container{
+    margin: 0px 15px;
+
+}
+.navbar-container .connection-btn{
+    padding: 15px;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+}
+.navbar-container .connection-btn:hover{
+    background-color: var(--secondary-color);
+}

@@ -1,0 +1,44 @@
+.home-carousel .carousel-item img{
+    // height: 95vh;
+}
+.connect-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: shake 0.8s infinite alternate; 
+}
+
+@keyframes shake {
+    from {
+      transform: translateY(-5px); /* Move left */
+    }
+    to {
+      transform: translateY(5px); /* Move right */
+    }
+}
+
+@media  screen and (max-width: 566.98px) {
+    .connect-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        animation: shake 0.8s infinite alternate; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .connect-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        animation: shake 0.8s infinite alternate; 
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+ 
+}
+@media (min-width: 1399.98px) { }
