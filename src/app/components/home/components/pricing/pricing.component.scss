@@ -1,0 +1,102 @@
+@import url('./../../../../../styles.scss');
+
+.call-now {
+    text-align: center;
+ margin-bottom: 20px;
+    h2 {
+        font-weight: 600;
+        margin: 0px;
+        font-size: 2.5rem;
+    }
+
+    h5 {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.62);
+        margin-bottom: 20px;
+    }
+
+    button {
+        border: none;
+        border-radius: 30px;
+        background-color: #fff;
+
+        color: var(--primary-color);
+        border: 2px solid;
+        border-color: var(--primary-color);
+
+        background-image: linear-gradient(to top, var(--primary-color) 50%, #fff 50%);
+        background-size: 100% 200%;
+        transition: background-position 0.3s ease-in-out;
+        height: 65px;
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 38px 50px;
+            height: 30px;
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+
+            background-position: 0 -100%;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+.ott-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    .head{
+        margin: auto;
+        margin-bottom: 20px;
+        img{
+            width: 300px;
+        }
+    } 
+}
+.ott-note{
+    img{
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 566.98px) {
+    .ott-plans{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .ott-plans{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+ 
+}
+@media (min-width: 1399.98px) { }

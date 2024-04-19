@@ -12,3 +12,16 @@
         --inner-circle:#0c29507d;
         // --background-color: #f8f9fa;
 }
+
+.btn-effect{
+    background-image: linear-gradient(to top, var(--secondary-color) 50%, var(--primary-color) 50%);
+    background-size: 100% 200%;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 15px 30px;
+    transition: background-position 0.3s ease-in-out;
+}
+.btn-effect:hover{
+    background-position: 0 -100%;
+}

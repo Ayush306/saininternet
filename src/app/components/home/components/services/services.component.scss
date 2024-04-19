@@ -1,0 +1,52 @@
+.services{
+    .heading h2{
+        text-align: center;
+        font-weight: 600;
+
+    }
+    .free-call-img{
+       
+            width: 100%;
+    
+    }
+}
+.explore-section{
+    // height: 100vh;
+    padding: 120px 0px;
+    background-image: url(./../../../../../assets/services/subscribe_bg02.webp);
+    background-size: cover;
+    background-position: center;
+    .explore-container{
+        
+        .sub-heading{
+            font-weight: 500;
+            line-height: 1.8;
+        }
+        .right-img{
+            width: 100%;
+        }
+        color: #fff;
+        h2{
+            font-weight: 600;
+        }
+        .yellow-q{
+            color: var(--primary-color);
+        }
+    }
+}
+
+@media  screen and (max-width: 566.98px) {
+    .explore-container{
+        .row{
+            text-align: center;
+        }
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .explore-container{
+        .row{
+            text-align: center;
+        }
+}
+}
