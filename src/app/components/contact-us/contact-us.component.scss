@@ -55,16 +55,18 @@
     width: 80%;
 }
 .call-us-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    
     padding: 22px 0px;
     background-color: red;
     margin-top: 30px;
     color:#fff;
     .call-text{
         font-size: 1.5rem;
+    }
+    .call-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .call-btn a{
         padding: 10px 20px;
@@ -73,14 +75,23 @@
         text-decoration: none;
     }
 }
+.call-wrapper{
+    display: flex;
+}
 @media  screen and (max-width: 566.98px) {
     .contact-info-section .content{
         column-gap: 0px;
+    }
+    .submit-section button{
+        width: 100%;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .contact-info-section .content{
         column-gap: 0px;
+    }
+    .submit-section button{
+        width: 100%;
     }
 }

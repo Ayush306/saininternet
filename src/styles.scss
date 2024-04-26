@@ -10,6 +10,7 @@
         --tertiary-color: #fff;
         --circle-color:#8c52ff6e;
         --inner-circle:#0c29507d;
+        --input-color:#424242e8;
         // --background-color: #f8f9fa;
 }
 
@@ -50,11 +51,12 @@
     border: none;
     box-shadow: 17px 0 60px #d3dcdc;
 }
-input,select:focus-visible{
+input,select,textarea:focus-visible{
     border: none;
     outline: none;
 }
- input,select{
+ input,select,textarea{
+    color: #424242e8;
     margin-bottom: 30px;
     width: 100%;
     transition: all .3s ease;
