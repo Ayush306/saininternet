@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-cus navbar-expand-lg">
     <div class="container-fluid navbar-container">
       <a class="navbar-brand logo" href="#">
         
@@ -13,19 +13,19 @@
             <a class="nav-link active" aria-current="page" href="#">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Plans </a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/plans']" routerLinkActive="router-link-active" >Plans </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Speed Test </a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/speedTest']">Speed Test </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Refer a friend </a>
+            <a class="nav-link active" aria-current="page" [routerLink]="['/refer-a-friend']">Refer a friend </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Blog</a>
+            <a class="nav-link active" [routerLink]="['/blog']">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contact Us</a>
+            <a class="nav-link active" [routerLink]="['/contactUs']">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#"><button class="connection-btn">Get a saini connection</button></a>

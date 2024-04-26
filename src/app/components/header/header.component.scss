@@ -30,7 +30,7 @@
    
 }
 .navbar-container{
-    margin: 0px 15px;
+    // margin: 0px 15px;
 
 }
 .navbar-container .connection-btn{
@@ -42,4 +42,12 @@
 }
 .navbar-container .connection-btn:hover{
     background-color: var(--secondary-color);
+}
+.navbar-cus{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }

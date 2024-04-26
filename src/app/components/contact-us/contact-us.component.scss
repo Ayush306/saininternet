@@ -1,0 +1,86 @@
+.contact-us-container img{
+    width: 100%;
+    // height: 300px;
+    padding: 0px;
+    margin: 0px;
+}
+.get-in-image{
+    width: 100%;
+    height: 300px;
+    background-image: url(./.../../../../../assets/common/get-in-touch.png);
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+
+}
+.contact-info-section{
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    margin-top: 30px;
+
+}
+.contact-info-section .content{
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+    width: 100%;
+    margin-top: 30px;
+    column-gap: 20px;
+    align-items: flex-start;
+    grid-template-columns: 80px 1fr;
+    h6{
+        color: #424242e8; 
+    }
+    img{
+        height: 70px;
+        width: 70px;
+    }
+}
+.form-container {
+
+    h5{
+        font-weight: 400;
+        color: #424242e8;
+    }
+}
+.contact-form{
+    margin-top: 50px;
+}
+.submit-section button{
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.submit-btn {
+    width: 80%;
+}
+.call-us-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0px;
+    background-color: red;
+    margin-top: 30px;
+    color:#fff;
+    .call-text{
+        font-size: 1.5rem;
+    }
+    .call-btn a{
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+}
+@media  screen and (max-width: 566.98px) {
+    .contact-info-section .content{
+        column-gap: 0px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .contact-info-section .content{
+        column-gap: 0px;
+    }
+}

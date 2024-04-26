@@ -25,3 +25,38 @@
 .btn-effect:hover{
     background-position: 0 -100%;
 }
+.ln{
+    text-decoration: none;
+    color: #fff;
+}
+.comming-soon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.comming-soon-container img{
+    width: 50%;
+}
+.input-grp {
+    border-radius: 50px;
+    background-color: #f7f9f9;
+    border: none;
+    margin-bottom: 30px;
+
+}
+.input-grp:focus{
+    background-color: #fff;
+    border: none;
+    box-shadow: 17px 0 60px #d3dcdc;
+}
+input,select:focus-visible{
+    border: none;
+    outline: none;
+}
+ input,select{
+    margin-bottom: 30px;
+    width: 100%;
+    transition: all .3s ease;
+    padding: 20px 40px;
+}

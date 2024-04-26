@@ -15,6 +15,9 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: auto;
     margin-bottom: 10px;
+    border-radius: 10px;
+
+    background-image: linear-gradient(to bottom, #0c2950, #221d39, #211324, #180a13, #000000);
 }
 .plans-section .plans-card .plans-card-heading{
 
@@ -32,11 +35,35 @@
     text-transform: uppercase;
     font-weight: 700;
 }
+.features{
+    // padding: 20px;
+    padding-left: 0px;
+}
 .features li{
     font-weight: 600;
-    text-align:left;
-    // list-style-image: image();
+    text-align: left;
+    list-style: none;
+    line-height: 3;
+    font-size: 14px;
+    // color: #848484;
+    color: #fff;
+    border-bottom: 1px dashed #dddddd;
+    // list-style-image:url('./../../../../../assets/plan-logo/checkmark-fill.webp');
+}
+.features li img{
+    width: 16px;
+    padding-right: 3px;
 }
 .plan-cards{
     display: flex;
+    justify-content: center;
+    
+}
+.amount {
+    font-weight: 700;
+    margin-top: 10px;
+    color: #fff;
+}
+.amount h2{
+    font-weight: 800;
 }

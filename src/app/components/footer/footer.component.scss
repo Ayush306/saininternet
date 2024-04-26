@@ -1,6 +1,6 @@
 .footer-section{
     background-color: black;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
@@ -11,4 +11,72 @@
 }
 .footer-section .footer-logo img{
     width: 80px;
+}
+.link-section{
+    color: white;
+.links{
+    font-size: 18px;
+}
+li{
+    color: #7e7e7e;
+    padding: 5px 0px;
+    font-size: 14px;
+    width: max-content;
+    cursor: pointer;
+    list-style: none;
+  
+    &:hover{
+        color: #fff;
+    }
+   
+}
+
+
+
+}
+.links li a{
+    color: #7e7e7e;
+}
+.left-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 20px;
+    flex-direction: column;
+
+
+}
+.social-media-handel svg{
+    width: 25px;
+}
+.social-media-handel{
+    display: flex;
+    gap: 5px;
+}
+@media  screen and (max-width: 566.98px) {
+    .ott-plans{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+
+        }
+    }
+    .left-footer{
+        justify-content: center;
+        align-items: flex-start ;
+        padding-left: 32px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .ott-plans{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
 }
