@@ -1,0 +1,43 @@
+.blog-section{
+
+    margin-bottom: 30px;
+    .heading{
+        // padding-top: 30px;
+        // margin: auto;
+        // text-align: center;
+        // width: 900px; /* Set the desired width */
+        height: 253px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height:auto;
+            overflow: hidden;
+            position: relative;
+            transform: translateY(-22%);
+
+        }
+        h1{
+            font-size: 3rem;
+        }
+       
+    }
+}
+.blog-card-container{
+    margin-top: 30px;
+    .blog-card{
+        display: flex;
+        border-radius: 0;
+        img{
+            // width: 100px;
+            
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .blog-card-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

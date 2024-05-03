@@ -24,5 +24,9 @@ export const routes: Routes = [
     {
         path:'refer-a-friend',
         loadComponent:()=>import('./components/refer-a-friend/refer-a-friend.component').then(m=>m.ReferAFriendComponent)
+    },
+    {
+        path:'blog',
+        loadComponent:()=>import('./components/blog/blog.component').then(m=>m.BlogComponent)
     }
 ];
