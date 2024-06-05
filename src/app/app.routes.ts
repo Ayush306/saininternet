@@ -14,10 +14,6 @@ export const routes: Routes = [
         loadComponent:()=>import('./components/speed-test/speed-test.component').then(m=>m.SpeedTestComponent)
     },
     {
-        path:'blog',
-        loadComponent:()=>import('./components/blog/blog.component').then(m=>m.BlogComponent)
-    },
-    {
         path:'contactUs',
         loadComponent:()=>import('./components/contact-us/contact-us.component').then(m=>m.ContactUsComponent)
     },
@@ -27,6 +23,8 @@ export const routes: Routes = [
     },
     {
         path:'blog',
-        loadComponent:()=>import('./components/blog/blog.component').then(m=>m.BlogComponent)
-    }
+        loadChildren:()=>import('./components/blog/blog.routing').then(m=>m.router)
+    },
+
+
 ];

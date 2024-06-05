@@ -1,34 +1,34 @@
-<nav class="navbar navbar-cus navbar-expand-lg">
+<nav class="navbar navbar-cus navbar-expand-lg" >
     <div class="container-fluid navbar-container">
-      <a class="navbar-brand logo" href="#">
+      <a class="navbar-brand logo" >
         
         <img src="./../../../assets/logo/logo-small.png" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" (click)="isShow()" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse item-container" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home </a>
+            <a class="nav-link " (click)="collapseNavbar()" [routerLink]="['/']" aria-current="page">Home </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/plans']" routerLinkActive="router-link-active" >Plans </a>
+            <a class="nav-link " (click)="collapseNavbar()" aria-current="page" [routerLink]="['/plans']" >Plans </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://www.speedtest.net/" target="_blank">Speed Test </a>
+            <a class="nav-link " (click)="collapseNavbar()" aria-current="page" href="https://www.speedtest.net/" target="_blank">Speed Test </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" [routerLink]="['/refer-a-friend']">Refer a friend </a>
+            <a class="nav-link " (click)="collapseNavbar()" aria-current="page" [routerLink]="['/refer-a-friend']">Refer a friend </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/blog']">Blog</a>
+            <a class="nav-link " (click)="collapseNavbar()" [routerLink]="['/blog']">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" [routerLink]="['/contactUs']">Contact Us</a>
+            <a class="nav-link " (click)="collapseNavbar()" [routerLink]="['/contactUs']">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#"><button class="connection-btn">Get a saini connection</button></a>
+            <a class="nav-link " (click)="collapseNavbar()" href="#"><button class="connection-btn" (click)="connect()">Get a saini connection</button></a>
           </li>
         </ul>
       </div>

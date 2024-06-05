@@ -51,3 +51,35 @@
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 }
+
+@media  screen and (max-width: 566.98px) {
+    .navbar-container{
+        padding-bottom: 46px;
+    }
+    .item-container{
+        min-height: 100vh;
+    }
+    .navbar-cus{
+        height: 85px;
+    }
+    .navbar-cus:has(.item-container.show){
+        height: 100vh;
+    } 
+    .navbar-container img{
+        width: 60px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar-container{
+        padding-bottom: 46px;
+    }
+    
+    .navbar-cus{
+        height: 85px;
+    }
+    .item-container{
+        min-height: 100vh;
+    }
+  
+}
