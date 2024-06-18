@@ -1,3 +1,33 @@
 <div class="container comming-soon-container">
-    <img src="./../../../assets/common/Coming Soon (Card Landscape).png" alt="" srcset="">
+    <!-- <img src="./../../../assets/common/Coming Soon (Card Landscape).png" alt="" srcset=""> -->
 </div>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">pilot_number</th>
+        <th scope="col">failure_per</th>
+        <th scope="col">campaignid</th>
+        <th scope="col">callerId</th>
+        <th scope="col">retry_history_0</th>
+        <th scope="col">retry_history_1</th>
+        <th scope="col">retry_history_2</th>
+      </tr>
+    </thead>
+    <tbody>
+        @for(item of data; track item){
+      <tr style="background-color: black;">
+
+            <td>{{item.pilot_number}}</td>
+            <td>{{item.failure_per}}</td>
+            <td>{{item.campaignid}}</td>
+            <td>{{item.callerId}}</td>
+            <td>{{item.retry_history_0}}</td>
+            <td>{{item.retry_history_1}}</td>
+            <td>{{item.retry_history_2}}</td>
+        </tr>
+    }
+      <tr>
+        
+    </tbody>
+  </table>
