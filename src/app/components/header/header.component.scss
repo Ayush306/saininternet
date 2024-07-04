@@ -13,7 +13,7 @@
 .item-container li a{
     text-transform: uppercase;
     font-weight: 500;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 
   
 }
@@ -33,6 +33,12 @@
     // margin: 0px 15px;
 
 }
+.logo img{
+    image-rendering: crisp-edges;
+    width: 100%;
+    height: auto;
+
+}
 .navbar-container .connection-btn{
     padding: 15px;
     border: none;
@@ -43,18 +49,45 @@
 .navbar-container .connection-btn:hover{
     background-color: var(--secondary-color);
 }
-.navbar-cus{
-    position: fixed;
+.navbar-cus,.changed-header-class{
+    position: absolute;
     top: 0px;
     width: 100%;
     z-index: 999;
+    background-color: transparent;
+    // background: #fff;
+    // box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    .logo img{
+        display: none;
+    }
+}
+.initial-header-class{
+    position: relative;
+    background-color:white;
     background: #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    .logo img{
+        display: block;
+    }
+    .item-container li a{
+        color: var(--secondary-color);
+    }
+    .item-container li a:hover{
+        color: var(--primary-color);
+    }
 }
 
+
+
 @media  screen and (max-width: 566.98px) {
+
+    .initial-header-class{
+        position: absolute;
+    }
     .navbar-container{
-        padding-bottom: 46px;
+        // padding-bottom: 46px;
+        background: #fff;
+        position: relative;
     }
     .item-container{
         min-height: 100vh;
@@ -68,11 +101,30 @@
     .navbar-container img{
         width: 60px;
     }
+    .item-container li a{
+        color: var(--primary-color);
+    }
+    .components-content{
+        margin-top: 0px;
+    }
+
+    .navbar-cus,.changed-header-class{
+
+        .logo img{
+            display: block;
+        }
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) { 
+
+    .initial-header-class{
+        position: absolute;
+    }
     .navbar-container{
         padding-bottom: 46px;
+        background: #fff;
+
     }
     
     .navbar-cus{
@@ -81,5 +133,13 @@
     .item-container{
         min-height: 100vh;
     }
-  
+    .item-container li a{
+        color: var(--primary-color);
+    }
+    .components-content{
+        margin-top: 0px;
+    }
+    .logo img{
+        display: block;
+    }
 }

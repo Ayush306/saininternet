@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { PlansComponent } from './components/plans/plans.component';
 import { ConnectOnWhatsappComponent } from './components/connect-on-whatsapp/connect-on-whatsapp.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ConnectService } from '../../services/connect.service';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-home',
@@ -13,9 +15,24 @@ import { ServicesComponent } from './components/services/services.component';
     PricingComponent,
     ServicesComponent
   ],
+  providers:[ConnectService],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnDestroy,OnInit{
+constructor(private connectService:ConnectService,private commonService:CommonService){
 
+}
+ ngOnInit(){
+  this.commonService.setHeaderClass('changed-header-class');
+console.log("home on in it");
+
+ }
+callUs(){
+  this.connectService.connect();
+}
+
+ngOnDestroy(): void {
+    this.commonService.setHeaderClass('initial-header-class');
+}
 }
