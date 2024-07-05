@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -9,6 +9,8 @@ import { RouterModule } from '@angular/router';
   styleUrl: './blog.component.scss'
 })
 export class BlogComponent {
-  constructor(){}
-
+  constructor(private router:Router){}
+  goToBlog(blogUrl:string){
+    this.router.navigate(['blog',blogUrl]);
+  }
 }
