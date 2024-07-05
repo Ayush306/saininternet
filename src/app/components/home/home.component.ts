@@ -25,7 +25,6 @@ constructor(private connectService:ConnectService,private commonService:CommonSe
 }
  ngOnInit(){
   this.commonService.setHeaderClass('changed-header-class');
-console.log("home on in it");
 
  }
 callUs(){

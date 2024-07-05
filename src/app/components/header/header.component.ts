@@ -26,7 +26,6 @@ export class HeaderComponent implements OnChanges,OnInit{
 ngOnInit(): void {
   this.commonService.headerChangeSubject.subscribe({
     next:(data)=>{
-      console.log(data,'subs');
       this.headerClass = data;
       
 
@@ -35,7 +34,6 @@ ngOnInit(): void {
 }
   
   ngOnChanges(): void {
-    console.log("header comonet");
     
   }
   connect(){
@@ -47,7 +45,6 @@ ngOnInit(): void {
 
   collapseNavbar() {
     const navbar = document.getElementById('navbarNav');
-    console.log(navbar);
     
     if (navbar && navbar.classList.contains('show')) {
       navbar.classList.remove('show');

@@ -25,6 +25,10 @@ export const routes: Routes = [
         path:'blog',
         loadChildren:()=>import('./components/blog/blog.routing').then(m=>m.router)
     },
+    {
+        path:'**',
+        loadComponent:()=>import('./components/page-not-found/page-not-found.component').then(m=>m.PageNotFoundComponent)
+    },
 
 
 ];

@@ -1,66 +1,74 @@
-.blog-section {
+.blog-list-section {}
 
-    margin-bottom: 30px;
+.blue-box-container {
+    width: 792px;
+    height: 580px;
+    background: linear-gradient(120.31deg, #0C2950 -5.38%, #8C52FF 100%);
+}
 
-    .heading {
-       
-        overflow: hidden;
+.main-blog-container .blog-banner {
+    position: absolute;
+    top: 52px;
+    left: -30px;
+    filter: brightness(.7);
+    filter: contrast(.9);
+    // filter: grayscale(.2);
 
-        img {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            position: relative;
-            transform: translateY(-22%);
+    img {
+        width: 710px;
+        height: 475px;
+    }
+}
 
-        }
+.main-blog-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 38px;
 
-        h1 {
+    .blue-box-content {
+        padding: 100px 0px 50px 280px;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        font-family: inherit;
+
+
+        a.heading {
+            font-family: inherit;
+
+            color: white;
+
+            text-decoration: none;
             font-size: 3rem;
-        }
-
-    }
-}
-
-.blog-card-container {
-    margin-top: 30px;
-
-    .blog-card {
-        display: flex;
-        border-radius: 0;
-
-        img {
-            // width: 100px;
-
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .blog-card-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.blog-card {
-    .blog-thumbnail {
-        height: 221px;
-        overflow: hidden;
-
-        img{
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            transform: translateY(-22%);
-
+            font-weight: 800;
         }
     }
 }
-.read-more{
-    text-decoration: none;
-    font-size: 12px;
+
+.blog-read-more-btn {
+    cursor: pointer;
+    background: #fff;
+    margin-top: 26px;
+    border-radius: 10px;
+
+    a {
+        color: #000;
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 500;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        a {
+            color: #fff;
+        }
+
+        background-color: var(--secondary-color);
+    }
 }

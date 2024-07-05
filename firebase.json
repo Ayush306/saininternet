@@ -5,6 +5,9 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+    "error_page": {
+      "404": "/index.html"
+    }
   }
 }
