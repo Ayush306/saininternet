@@ -14,7 +14,7 @@ export const routes: Routes = [
         loadComponent:()=>import('./components/speed-test/speed-test.component').then(m=>m.SpeedTestComponent)
     },
     {
-        path:'contactUs',
+        path:'contact-us',
         loadComponent:()=>import('./components/contact-us/contact-us.component').then(m=>m.ContactUsComponent)
     },
     {
@@ -27,7 +27,8 @@ export const routes: Routes = [
     },
     {
         path:'**',
-        loadComponent:()=>import('./components/page-not-found/page-not-found.component').then(m=>m.PageNotFoundComponent)
+        loadComponent:()=>import('./components/page-not-found/page-not-found.component').then(m=>m.PageNotFoundComponent),
+        pathMatch:'full'
     },
     
 

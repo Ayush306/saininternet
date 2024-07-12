@@ -1,5 +1,5 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-bs-ride="carousel">
-    <div class="carousel-inner home-carousel" (click)="callUs()">
+    <div class="carousel-inner home-carousel">
       <div class="carousel-item active" >
         <img src="./../../../assets/carosual_images/banner-home.jpg" class="d-block w-100" alt="...">
         <!-- <div class="mobile-no">
@@ -15,12 +15,20 @@
     </div>
   </div>
   <app-plans></app-plans>
-  <div class="connect-whatsapp">
-    <app-connect-on-whatsapp></app-connect-on-whatsapp>
-  </div>
+ 
   <div class="pricing-section mb-5">
     <app-pricing></app-pricing>
   </div>
 <div class="services-section mb-5">
    <app-services></app-services>
 </div>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7P38MJHJM1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7P38MJHJM1');
+</script>

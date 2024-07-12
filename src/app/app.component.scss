@@ -1,6 +1,12 @@
 .components-content{
     // margin-top: 75px;
 }
+.connect-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: shake 0.8s infinite alternate; 
+}
 @media  screen and (max-width: 566.98px) {
     .components-content{
         margin-top: 83px;    

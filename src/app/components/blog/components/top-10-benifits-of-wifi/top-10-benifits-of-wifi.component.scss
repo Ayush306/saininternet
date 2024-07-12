@@ -1,53 +1,68 @@
-.blog-detail-section{
+.blog-detail-section {}
 
-}
-.image-section{
+.image-section {
     width: 100%;
     height: 380px;
     display: flex;
     overflow: hidden;
     justify-content: center;
 }
-.image-section img{
+
+.image-section img {
     width: 100%;
     object-fit: cover;
     height: 100%;
     overflow: hidden;
 }
-.content-card{
+
+.content-card {
     padding: 30px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    .time-span{
+
+    .time-span {
         font-size: 14px;
         font-family: inherit;
-        font-weight:300;
+        font-weight: 300;
     }
-    .intro p{
+
+    .intro p {
         font-size: 16px;
         font-family: inherit;
     }
-    .points{
+
+    .points {
         list-style: decimal;
         font-weight: 600;
         margin-bottom: 10px;
-        .para{
+
+        .para {
             margin-top: 10px;
+
+            a {
+                color: blue;
+
+                text-decoration: underline;
+
+                &:hover {
+
+                    cursor: pointer;
+                }
+            }
         }
-        
-        p{
+
+        p {
             font-size: 14px;
             font-weight: normal;
             font-family: inherit;
         }
     }
-    .conclusion{
 
-    }
+    .conclusion {}
 }
 
 
-.plans-card{
+.plans-card {
     border-radius: 0px;
     border: none;
     // width: 300px;
@@ -56,18 +71,20 @@
     margin: auto;
     margin-bottom: 10px;
     border-radius: 10px;
-   background-image: linear-gradient(to bottom, #4b2d88, #4b2d88, #4b2d88, #4b2d88, #000000);
+    background-image: linear-gradient(to bottom, #4b2d88, #4b2d88, #4b2d88, #4b2d88, #000000);
 
-   .card-footer .get-now-btn{
-    width: 100%;
+    .card-footer .get-now-btn {
+        width: 100%;
 
 
-   }
-   .card-footer .get-now-btn button{
-    width: 100%;
-   }
+    }
+
+    .card-footer .get-now-btn button {
+        width: 100%;
+    }
 }
-.plans-card-heading .plan-header-logo svg{
+
+.plans-card-heading .plan-header-logo svg {
     width: 100px;
     border: 5px solid;
     border-radius: 50%;
@@ -76,17 +93,19 @@
     padding: 8px;
 }
 
-.plans-card-heading .plan-name,.plan-name h2{
+.plans-card-heading .plan-name,
+.plan-name h2 {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
 }
 
-.features{
+.features {
     // padding: 20px;
     padding-left: 0px;
 }
-.features li{
+
+.features li {
     font-weight: 600;
     text-align: left;
     list-style: none;
@@ -97,20 +116,24 @@
     border-bottom: 1px dashed #dddddd;
     // list-style-image:url('./../../../../../assets/plan-logo/checkmark-fill.webp');
 }
-.features li img{
+
+.features li img {
     width: 16px;
     padding-right: 3px;
 }
-.plan-cards{
+
+.plan-cards {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .amount {
     font-weight: 700;
     margin-top: 10px;
     color: #fff;
 }
-.amount h2{
+
+.amount h2 {
     font-weight: 800;
 }

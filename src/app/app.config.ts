@@ -3,12 +3,12 @@ import { provideRouter, withEnabledBlockingInitialNavigation, withInMemoryScroll
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes, 
     withEnabledBlockingInitialNavigation(),
     withInMemoryScrolling({ scrollPositionRestoration: 'top' }))
     ,provideClientHydration(),
-     {provide: LocationStrategy, useClass: HashLocationStrategy} ]
+     {provide: LocationStrategy, useClass: PathLocationStrategy} ]
 };
