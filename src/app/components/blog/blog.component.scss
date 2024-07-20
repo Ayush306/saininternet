@@ -1,7 +1,6 @@
-.blog-list-section {}
+
 
 .main-blog-container {
-  // text-align: center;
 
   .blog-heading {
     margin-bottom: 20px;
@@ -9,7 +8,7 @@
   }
 
   .image-section-container{
-    height: 60rem;
+    position: relative;
   }
   .image-section {
     background-image: url('./../../../assets/blog/new-images/nastya-dulhiier-OKOOGO578eo-unsplash.jpg');
@@ -19,27 +18,23 @@
 
     align-items: center;
     justify-content: center;
-    display: flex;
     border-radius: 20px;
     position: relative;
 
     width: 100%;
-    height: 32rem;
+    height: 35rem;
 
     .person-logo{
       width: 38px;
     }
 
-    .pc-image {
 
-      width: 100%;
-      // height: auto;
-    }
   }
   .card-section {
-
-    padding-top: 32rem;
-    position: absolute;
+    display: flex;
+    margin-top: -14.5rem;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 
     .blog-card{
@@ -83,67 +78,20 @@
   }
 }
 
-.text-over-img {
-
-  width: 60%;
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  padding: 10px;
-  color: #fff;;
-
-  h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-  }
-
-  .blog-category {
-    padding: 5px 10px;
-    border-radius: 7px;
-    background-color: var(--primary-color);
-  }
-
-  .text-footer {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-size: 14px;
-    // justify-content: center;
-    p{
-      margin: 0px;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-
-.mobile-image{
-  display: none;
-}
 
 
 @media  screen and (max-width: 566.98px) {
-  .pc-image {
-    display: none;
-  }
-  .mobile-image{
-    display: block;
-    height: 50vh;
-    width: 100vw;
-  }
-  .text-over-img{
-    display: none;
-  }
+.card-section {
+  width: 100% !important;
+}
 
 
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .card-section {
+    width: 100%;
+  }
 
 
 }
